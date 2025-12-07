@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+:root {
     /* Glassmorphism / Future Minimal Palette */
     --color-background: #0f172a; /* Slate 900 base */
     --color-surface: rgba(30, 41, 59, 0.4); /* Glass surface */
@@ -24,9 +24,6 @@
     
     --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
     --shadow-glow: 0 0 20px rgba(56, 189, 248, 0.3);
-}
-
-:root {
     color-scheme: dark;
 }
 

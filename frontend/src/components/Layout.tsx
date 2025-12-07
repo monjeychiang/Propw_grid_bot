@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Activity, History, LogIn, Grid3X3, Github, HelpCircle, X, UserCheck } from 'lucide-react';
+import { Activity, History, LogIn, Grid3X3, HelpCircle, X, UserCheck } from 'lucide-react';
 import { clsx } from 'clsx';
 import { api } from '../api/client';
 
@@ -45,7 +45,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         current_price: null,
         lastMessage: null,
     });
-    const [priceHistory, setPriceHistory] = useState<{ price: number; ts: number }[]>([]);
+    const [, setPriceHistory] = useState<{ price: number; ts: number }[]>([]);
     const [priceTrend, setPriceTrend] = useState<'up' | 'down' | 'flat' | null>(null);
 
     const [toasts, setToasts] = useState<Toast[]>([]);
